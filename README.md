@@ -1,12 +1,11 @@
 # Theme Park Map Builder - Group Project
 
-As a team you will create a interactive map of a theme park. The park will include 8 areas with different attractions and events.
-
 ## Client
 Unitainment Theme Park
 
 ## Challenge Statement
-Unitainment is having a problem with long lines at the more popular rides and exhibits and empty seats at the other entertainment options. They want an interactive map of their theme park for guests to be able to find all the attractions and plan their visit. The park has 8 areas with different attractions and events.
+Unitainment is having a problem with long lines at the more popular rides and exhibits and empty seats at the other entertainment options. They want an interactive map of their theme park for guests to be able to find all the attractions and plan their visit. As a team, you will create this interactive map of a theme park. The park will include 8 areas with different attractions and events.
+
 
 ## Getting Started
 
