@@ -12,7 +12,7 @@ Unitainment is having a problem with long lines at the more popular rides and ex
 > **Pro Tip:** If you find yourself writing logic on the first day of the sprint, then you did not spend enough time planning, and gaining clarification on the acceptance criteria.
 
 1. Be sure to review your design requirements [here](https://sites.google.com/susanculkin.com/fewdd-b/design-subjects/week-8/theme-park-project). 
-1. Review the [product owner's tickets](https://github.com/nashville-software-school/group-project-theme-park/issues).
+1. Review the [product owner's tickets](https://github.com/nashville-software-school/group-project-uix-theme-park/issues).
 1. Create Firebase account for your team upload the boilerplate JSON data for use in this application.
 1. Be sure to set your Firebase rules for indexing.
 1. Make sure you spend time defining MVP and creating a plan to reach that goal.
