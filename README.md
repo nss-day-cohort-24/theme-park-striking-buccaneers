@@ -1,3 +1,15 @@
+#INSTRUCTIONS FOR CREATING A README.md:
+
+1. As a user, I want well written instructions on how to use this application.
+
+1. Acceptance Criteria
+1. Given user wants to use this application
+1. When the user comes to the Github project page
+1. Then there should be a well written instructions on how to use this web application
+1. And there should be instructions for potential developers on how to get the project running in their local environment
+
+
+
 # Theme Park Map Builder - Group Project
 
 ## Client
