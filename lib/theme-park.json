@@ -17,7 +17,7 @@
             "id": 1,
             "name": "Main Street U.S.A.",
             "description": "Main Street is a Disneyfied turn-of-the-20th-century small-town American thoroughfare. Its buildings are real, not elaborate props. Attention to detail is exceptional: Furnishings and fixtures are true to the period. Along the street are shops, character-greeting venues, eating places, City Hall, and a fire station. Occasionally, horse-drawn trolleys, fire engines, and horseless carriages transport visitors along Main Street to the Central Plaza.",
-            "colorTheme": "730217"
+            "colorTheme": "6d4c77"
         },
         {
             "id": 2,
@@ -54,6 +54,12 @@
             "name": "Cinderlla Castle",
             "description": "Rising high in the sky at the end of Main Street, U.S.A., Cinderella Castle welcomes you to a magical world of fantasy and fun. The central icon of Walt Disney World Resort, the castle invites all who visit to celebrate in a place where dreams come true.",
             "colorTheme": "F2CF53"
+        },
+        {
+            "id": 8,
+            "name": "Treasure Island",
+            "description": "Climb aboard the 18th Century pirate ship with buccaneers and buried gold!",
+            "colorTheme": "#9b111e"
         }
     ],
 "attractions": [
@@ -219,7 +225,7 @@
             "name": "Pirates of the Caribbean",
             "description": "Wander a meanderin’ alleyway within a Spanish fortress and board a small barge for a spellbinding high-seas adventure. Escape through a shadowy grotto past the ghostly catacombs of fallen pirates and swoop down a small rushing waterfall, your passageway to the Golden Age of Piracy. ",
             "type_id": 1,
-            "area_id": 2
+            "area_id": 8
         },
         {
             "id": 24,
@@ -254,7 +260,7 @@
             "name": "Tortuga Tavern",
             "description": "Steal away to this delightful pirate haunt and prepare for the tastiest grub this side of Port Royal! Featuring savory turkey legs and hot dogs, along with beverages and more, Tortuga Tavern is the perfect place to drop anchor after a swashbuckling adventure aboard Pirates of the Caribbean.",
             "type_id": 2,
-            "area_id": 2
+            "area_id": 8
         },
         {
             "id": 29,
@@ -275,7 +281,7 @@
             "name": "A Pirate's Adventure - Treasures of the Seven Seas",
             "description": "Captain Jack be needin’ yer help to raid 5 treasures hidden throughout Adventureland. So be sure yer sportin’ yer MagicBand—or make yer way o’er to The Crow’s Nest and get yer hands on a magic talisman. Ye won’t be able to read the 5 maps without them! So make yer way o’er to The Crow’s Nest and get yer hands on a magic talisman—ye won’t be able to read the 5 maps without it. Then, and only then, will ye be able to help Jack complete each unforgettable mission.",
             "type_id": 3,
-            "area_id": 2
+            "area_id": 8
         },
         {
             "id": 32,
@@ -296,14 +302,14 @@
             "name": "The Pirates League",
             "description": "Transform into a pirate, empress or mermaid—and even receive a new name—inside this rustic lair. ",
             "type_id": 4,
-            "area_id": 2
+            "area_id": 8
         },
         {
             "id": 35,
             "name": "Plaza del Sol Caribe Bazaar",
             "description": "For all ye scurvy scoundrel and wannabe scallywags, meet your mateys at this pirate haunt to pillage and plunder your way through skullduggery T-shirts, hats, candy, snacks, souvenirs and other pirate booty—like yer life depends on it. ",
             "type_id": 4,
-            "area_id": 2
+            "area_id": 8
         },
         {
             "id": 36,
@@ -319,7 +325,7 @@
             "description": "Boys and girls, gather ye ‘round! It’s time to be regaled by the scourge of the seven seas—Captain Jack Sparrow. Our favorite scoundrel is recruiting young “volunteers” to begin training. Raise your hand high if you want a life of adventure, and you might be picked! Captain Jack only selects maybe 4 wannabe scallywags for sword learnin'.",
             "times": ["10:30AM", "11:30AM", "12:30PM", "2:30PM", "3:30PM", "4:30PM"],
             "type_id": 5,
-            "area_id": 2
+            "area_id": 8
         },
         {
             "id": 38,
