@@ -1,5 +1,59 @@
-// $red: #a30d2d,
-// $white: #ffffff,
-// $black: #000000,
-// $grey: #69645e,
-// $orange: #ff8e0c,
+// I M P O R T S - GoogleFonts
+@import url('https://fonts.googleapis.com/css?family=BioRhyme|Libre+Franklin');
+
+// V A R I A B L E S
+$red: #a30d2d;
+$white: #ffffff;
+$black: #000000;
+$grey: #69645e;
+$orange: #ff8e0c;
+$primary-text: 'Libre Franklin', Helvetica, Arial, sans-serif;
+$headings-text:'BioRhyme', Palatino, serif;
+
+
+// B A S E S T Y L E S
+body{
+    color: $black;
+    font-family: $primary-text;
+    font-size: 16px;
+    padding: 1em;
+}
+
+h1{
+    font-family: $headings-text;
+    font-weight: 800;
+    color: $red;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+h2{
+    font-family: $headings-text;
+    font-weight: 800;
+    color: $black;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+h3{
+    font-family: $headings-text;
+    font-weight: 400;
+    color: $grey;
+    font-size: 1.7em;
+    text-transform: uppercase;
+}
+
+nav{
+    background-color: $red;
+    color: $white;
+    font-family: $primary-text;
+    position: sticky;
+    margin: auto;
+    top: 0;
+}
+
+footer{
+    background-color: $grey;
+    color: $white;
+    font-family: $primary-text;
+}
