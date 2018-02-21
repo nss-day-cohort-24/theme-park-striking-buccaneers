@@ -1,1 +1,11 @@
 lib/node_modules
+dist/
+design/
+.DS_Store
+.vscode/
+images/pull-request.png
+images/technical.png
+images/user-story.png
+lib/sass-cache
+FEATURE_TICKET.md
+ISSUE_TICKET.md
