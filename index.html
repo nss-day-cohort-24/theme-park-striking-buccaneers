@@ -5,10 +5,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Unitainment Theme Park - Striking Buccaneers!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 <body>
 
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a class="navbar-brand" href="#">Pirate's Cove</a>
+        <form class="form-inline" action="/action_page.php">
+          <input class="form-control" type="text" placeholder="Search">
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
     
-    
+      
+
+        <!-- Links -->
+        <ul class="navbar-nav navbar-right">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="map.html">Explore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tickets</a>
+          </li>
+           <li class="nav-item">
+                    <a class="nav-link" href="#">Info</a>
+                  </li>
+                  <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                      </li>
+                      <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                          </li>
+          <!-- Dropdown -->
+          <!--<li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Dropdown link
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Home</a>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <a class="dropdown-item" href="#">Link 3</a>
+              
+            </div>
+          </li>-->
+        </ul>
+      </nav>
+      <div class="container-fluid">
+            <div class="row">
+                  <div class="col-3">
+                          
+                        </div>
+         <!--<h3>Collapsible Navbar</h3>
+          <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+          <p>Only when the button is clicked, the navigation bar will be displayed.</p>
+          <p>Tip: You can also remove the .navbar-expand-md class to ALWAYS hide navbar links and display the toggler button.</p>-->
+        
+        <div class="col-6">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+  
+          <!-- Indicators -->
+          <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+          </ul>
+          
+          <!-- The slideshow -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="imgs/entrance.jpg" alt="Los Angeles" width="550" height="250">
+            </div>
+            <div class="carousel-item">
+              <img src="imgs/Pirates-of-the-Caribbean-4.jpg" alt="Chicago" width="550" height="250">
+            </div>
+            <div class="carousel-item">
+              <img src="imgs/entrance.jpg" alt="New York" width="550" height="250">
+            </div>
+          </div>
+          
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+        </div><!--col-8-->
+       <div class="col-3">                
+          </div>
+      </div><!--container-->
+  </div><!--row-->
+  
+  <div class="container-fluid">    
+          <h3>What We Do</h3><br>
+          <div class="row">
+            <div class="col-4">
+                
+                  <div class="card" style="width:500px">
+                          <div class="card-body">
+                            <h4 class="card-title">Jane Doe</h4>
+                            <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
+                            <a href="#" class="btn btn-primary">See Profile</a>
+                          </div>
+                          <img class="card-img-bottom" src="img_avatar6.png" alt="Card image" style="width:100%">
+                        </div>
+            </div>
+            <div class="col-4"> 
+                  <div class="card" style="width:500px">
+                          <div class="card-body">
+                            <h4 class="card-title">Jane Doe</h4>
+                            <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
+                            <a href="map.html" class="btn btn-primary">See Profile</a>
+                          </div>
+                          <img class="card-img-bottom" src="img_avatar6.png" alt="Card image" style="width:100%">
+                        </div>   
+            </div>
+            <div class="col-4">
+                  <div class="card" style="width:500px">
+                          <div class="card-body">
+                            <h4 class="card-title">Jane Doe</h4>
+                            <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
+                            <a href="#" class="btn btn-primary">See Profile</a>
+                          </div>
+                          <img class="card-img-bottom" src="img_avatar6.png" alt="Card image" style="width:100%">
+                        </div>
+            </div>
+          </div><!--row-2-->
+        </div><br><!--container-fluid-2-->
+        <footer class="container-fluid text-center">
+                <p>Footer Text</p>
+              </footer>
 </body>
 </html>
