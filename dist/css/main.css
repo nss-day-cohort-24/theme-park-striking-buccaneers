@@ -6,10 +6,17 @@ nav {
   border-bottom: 3px solid #a30d2d;
   position: sticky;
   margin: auto;
-  top: 0; }
+  top: 0;
+  display: flex; }
+
+nav .row {
+  flex-wrap: wrap; }
+
+nav .col {
+  border: 3px solid green; }
 
 .search {
-  width: 500px; }
+  width: 75%; }
 
 .btn-search {
   background-color: #a30d2d;
@@ -57,15 +64,36 @@ h3 {
   font-size: 1.7em;
   text-transform: uppercase; }
 
+h4 {
+  font-family: "BioRhyme", Palatino, serif;
+  font-weight: 800;
+  font-size: 1.2em;
+  text-transform: uppercase; }
+
 footer {
   background-color: #a30d2d;
   color: #ffffff;
   font-family: "Libre Franklin", Helvetica, Arial, sans-serif;
-  padding: 0; }
+  padding: 0;
+  justify-content: space-between; }
 
-footer p {
+footer .col {
   padding: 3em;
   margin: 0em; }
+
+footer .col-center {
+  text-align: center; }
+
+footer h4 {
+  text-align: center; }
+
+.social {
+  text-align: center; }
+
+.social a {
+  color: #ffffff;
+  font-size: 2em;
+  padding: .5em; }
 
 .carousel-inner img {
   width: 100%;
