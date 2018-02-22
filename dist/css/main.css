@@ -1,8 +1,39 @@
 @import url("https://fonts.googleapis.com/css?family=BioRhyme|Libre+Franklin");
+nav {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Libre Franklin", Helvetica, Arial, sans-serif;
+  border-bottom: 3px solid #a30d2d;
+  position: sticky;
+  margin: auto;
+  top: 0; }
+
+.search {
+  width: 500px; }
+
+.btn-search {
+  background-color: #a30d2d;
+  border-color: #a30d2d;
+  color: #ffffff; }
+
+.btn-search:hover {
+  background-color: #ff8e0c;
+  border-color: #ff8e0c;
+  color: #ffffff; }
+
+nav a {
+  color: #ffffff; }
+
+nav a:hover {
+  color: #ff8e0c; }
+
 body {
   color: #000000;
   font-family: "Libre Franklin", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 16px; }
+
+main {
+  margin-top: 135px;
   padding: 1em; }
 
 h1 {
@@ -26,18 +57,15 @@ h3 {
   font-size: 1.7em;
   text-transform: uppercase; }
 
-nav {
+footer {
   background-color: #a30d2d;
   color: #ffffff;
   font-family: "Libre Franklin", Helvetica, Arial, sans-serif;
-  position: sticky;
-  margin: auto;
-  top: 0; }
+  padding: 0; }
 
-footer {
-  background-color: #69645e;
-  color: #ffffff;
-  font-family: "Libre Franklin", Helvetica, Arial, sans-serif; }
+footer p {
+  padding: 3em;
+  margin: 0em; }
 
 .carousel-inner img {
   width: 100%;
@@ -45,5 +73,14 @@ footer {
 
 .hidden {
   display: none; }
+
+.card {
+  margin: 20px 10px; }
+
+.card-body {
+  margin: 20px; }
+
+#demo {
+  margin-left: 15px; }
 
 /*# sourceMappingURL=main.css.map */
