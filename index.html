@@ -14,57 +14,41 @@
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-expand-sm">
-            <a class="navbar-brand" href="#"><img src="../images/LogoAlt2_PiratesCove-500.png" class="img-responsive" alt="Pirate's Cove brand mark pirate flag"></a>
-        <form class="form-inline" action="/action_page.php">
-          <input class="form-control" type="text" placeholder="Search">
-          <button class="btn btn-success" type="submit">Search</button>
-        </form>
-        <!-- Links -->
-        <ul class="navbar-nav navbar-right">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="map.html">Explore</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Tickets</a>
-          </li>
-           <li class="nav-item">
-                    <a class="nav-link" href="#">Info</a>
-                  </li>
-                  <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                      </li>
-                      <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                          </li>
-          <!-- Dropdown -->
-          <!--<li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              Dropdown link
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Home</a>
-              <a class="dropdown-item" href="#">Link 2</a>
-              <a class="dropdown-item" href="#">Link 3</a>
-              
-            </div>
-          </li>-->
-        </ul>
-      </nav>
-    </header>
+  <nav class="navbar navbar-expand-sm fixed-top">
+    <div class="col-2"> 
+      <a class="navbar-brand" href="#"><img src="../images/LogoAlt2_PiratesCove-500.png" width="120px" alt="Pirate's Cove brand mark pirate flag"></a>
+    </div>
+    <div class="col-6">
+      <input class="search form-control-md" type="text" placeholder="Search Pirate's Cove">
+      <button class="btn btn-search" type="submit">Search</button>
+    </div>
+      <!-- Links -->
+    <div class="col-4">
+      <ul class="navbar-nav navbar-right">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="map.html">Explore</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Tickets</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
       <div class="container-fluid">
             <div class="row">
                   <div class="col-3">
-                          
                         </div>
-         <!--<h3>Collapsible Navbar</h3>
-          <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
-          <p>Only when the button is clicked, the navigation bar will be displayed.</p>
-          <p>Tip: You can also remove the .navbar-expand-md class to ALWAYS hide navbar links and display the toggler button.</p>-->
-        
+
         <!-- <div class="col-6">
         <div id="demo" class="carousel slide" data-ride="carousel">
   
@@ -103,45 +87,46 @@
   </div><!--row-->
   
   <div class="container-fluid">    
-          <h3>What We Do</h3><br>
-          <div class="row">
-            <div class="col-4">
-                
-                  <div class="card" style="width:500px">
-                          <div class="card-body">
-                            <h4 class="card-title">PC Theme Areas</h4>
-                            <p class="card-text">PC has 8 different Themed areas To Explore:</p>
-                            <a href="#" class="btn btn-primary">AREA LIST</a>
-                          </div>
-                          <img class="card-img-bottom" src="img_avatar6.png" alt="Card image" style="width:100%">
-                        </div>
+    <h3>What We Do</h3><br>
+      <div class="row">
+        <div class="col-4">
+          <div class="card" style="width:500px">
+            <div class="card-body">
+              <h4 class="card-title">PC Theme Areas</h4>
+              <p class="card-text">PC has 8 different Themed areas To Explore:</p>
+              <a href="#" class="btn btn-primary">AREA LIST</a>
             </div>
-            <div class="col-4"> 
-                  <div class="card" style="width:500px">
-                          <div class="card-body">
-                            <h4 class="card-title">Pirate's Cove Map</h4>
-                            <p class="card-text">Checkout Our Interactive Map</p>
-                            <a href="map.html" class="btn btn-primary">INTERACTIVE MAP</a>
-                          </div>
-                          <img class="card-img-bottom" src="img_avatar6.png" alt="Card image" style="width:100%">
-                        </div>   
+          <img class="card-img-bottom" src="img_avatar6.png" alt="Card image" style="width:100%">
+          </div>
+        </div>
+        <div class="col-4"> 
+          <div class="card" style="width:500px">
+            <div class="card-body">
+              <h4 class="card-title">Pirate's Cove Map</h4>
+              <p class="card-text">Checkout Our Interactive Map</p>
+              <a href="map.html" class="btn btn-primary">INTERACTIVE MAP</a>
             </div>
-            <div class="col-4">
-                  <div class="card" style="width:500px">
-                          <div class="card-body">
-                            <h4 class="card-title">PC Attractions</h4>
-                            <p class="card-text">Checkout All Of Our 130 Fun activities here:</p>
-                            <a href="#" class="btn btn-primary">ATTRACTIONS</a>
-                          </div>
-                          <img class="card-img-bottom" src="img_avatar6.png" alt="Card image" style="width:100%">
-                        </div>
+            <img class="card-img-bottom" src="img_avatar6.png" alt="Card image" style="width:100%">
+          </div>   
+        </div>
+        <div class="col-4">
+          <div class="card" style="width:500px">
+            <div class="card-body">
+              <h4 class="card-title">PC Attractions</h4>
+              <p class="card-text">Checkout All Of Our 130 Fun activities here:</p>
+              <a href="#" class="btn btn-primary">ATTRACTIONS</a>
             </div>
-          </div><!--row-2-->
-        </div><br>container-fluid-2 -->
-        <footer class="container-fluid text-center">
-                <p>Copyright Information</p>
-              </footer>
-    <script src="dist/app.js"></script>
+            <img class="card-img-bottom" src="img_avatar6.png" alt="Card image" style="width:100%">
+          </div>
+        </div>
+      </div><!--row-2-->
+  </div>
+
+  <footer>
+    <p>Copyright Information</p>
+  </footer>
+
+<script src="dist/app.js"></script>
 
 </body>
 </html>
