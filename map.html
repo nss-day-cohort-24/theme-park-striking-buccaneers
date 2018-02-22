@@ -12,7 +12,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="dist/css/main.css" />
 </head>
-<body>
+<body onload="map_image()">
   <header>
     <nav class="navbar navbar-expand-sm fixed-top">
       <div class="col-md-2"> 
@@ -95,8 +95,28 @@
                     <div class="map_class" id="8">8</div>
                 </div>
                 <div class="col-9">
-                <img src="images/map_PiratesCove.jpg" width="100%">
-                </div><!--col-6-->
+                    <div class="card bg-dark text-white">
+                        <img class="card-img" src="images/map_PiratesCove.jpg" alt="Card image" width="100%">
+                        <div class="card-img-overlay">
+                    <div class="row stackem">
+                        <div class="col map_class" id="1">1</div>
+                        <div class="col map_class" id="2">2</div>
+                        <div class="col map_class" id="3">3</div>
+                    </div>
+                    <div class="row stackem">
+                        <div class="col map_class" id="4">4</div>
+                        <div class="col map_class" id="5">5</div>
+                        <div class="col map_class" id="6">6</div>
+                    </div>
+                    <div class="row stackem">
+                        <div class="col map_class" id="7">7</div>
+                        <div class="col map_class" id="8">8</div>
+                        <div class="col map_class" id="9">9</div>
+                      </div>
+                    </div>
+                  </div>
+                
+                </div><!--col-9-->
                 
           </div><!--row-->
       </div><!--container-fluid-->
@@ -130,7 +150,6 @@
           <div class="col-sm-12" id="copyright">replace</div>
       </div>
     </footer>
-
     <script src="dist/app.js"></script>
 </body>
 </html>
