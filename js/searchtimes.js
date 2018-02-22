@@ -9,3 +9,5 @@ let searchTimes = require('./fire');
 function area1ShowTimes(id) {
     console.log("fetching area 1 showtimes");
 }
+
+module.exports
