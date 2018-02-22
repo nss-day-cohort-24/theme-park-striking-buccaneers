@@ -36,7 +36,6 @@ let defaultInstructionText = "<h3>Welcome to the Pirate's Cove Interactive Map!<
 // module.exports = {testing};
 
 
-
 // use an overlay with a grid, each cell would have its own class name or id
 // string manipulation: each cell that links to something (attractions), will have a class name
 // add event listener to those classes, to call the function
