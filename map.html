@@ -13,34 +13,38 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-                <a class="navbar-brand" href="#">Pirate's Cove</a>
-            <form class="form-inline" action="/action_page.php">
-              <input class="form-control" type="text" placeholder="Search">
-              <button class="btn btn-success" type="submit">Search</button>
-            </form>
-            <!-- Links -->
-            <ul class="navbar-nav navbar-right">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="map.html">Explore</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Tickets</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Info</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-          </nav>
+  <header>
+    <nav class="navbar navbar-expand-sm fixed-top">
+      <div class="col-2"> 
+        <a class="navbar-brand" href="/index.html"><img src="../images/LogoAlt2_PiratesCove-500.png" width="120px" alt="Pirate's Cove brand mark pirate flag"></a>
+      </div>
+      <div class="col-6">
+        <input class="search form-control-md" type="text" placeholder="Search Pirate's Cove">
+        <button class="btn btn-search" type="submit">Search</button>
+      </div>
+        <!-- Links -->
+      <div class="col-4">
+        <ul class="navbar-nav navbar-right">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="map.html">Explore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tickets</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-3">
@@ -62,11 +66,12 @@
                 
           </div><!--row-->
       </div><!--container-fluid-->
+  </main>    
       
-      
-            <script src="js/map.js"></script>
-    <footer class="container-fluid text-center">
-      <p>Copyright Information</p>
-    </footer>
+  <footer>
+    <p>Copyright Information</p>
+  </footer>
+
+    <script src="js/map.js"></script>
 </body>
 </html>
