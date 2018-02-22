@@ -86,7 +86,7 @@ testGrab.area1(1)
 let instructions = document.getElementById("instructions");
 let mapAreas = document.getElementsByClassName("map_class");
 let emptyCells = document.getElementById("empty");
-let defaultInstructionText = "new instructions";
+let defaultInstructionText = "<h3>Welcome to the Pirate's Cove Interactive Map!</h3><br><h4>Instructions on how to use this map:</h4><br><ul><li>Click on a section of the map with a number to see that area of Pirate's Cove</li><li>View and read about all of the attractions and areas to visit in that area of the park.</li><li>To view another area of the park, click on another number on the Pirate's Cove Map</li><li>Have fun!</li>";
 
 
 

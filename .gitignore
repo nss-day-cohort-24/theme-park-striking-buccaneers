@@ -1,5 +1,6 @@
 lib/node_modules
-dist/
+dist/app.js
+dist/css
 design/
 .DS_Store
 .vscode/
