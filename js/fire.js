@@ -12,7 +12,7 @@ console.log("hello from fire.js");
 //           data.attractionItems
       //}
 
-let fetchFire;
+let fireFetcher;
 let fireData;
 
 
@@ -27,15 +27,15 @@ function dataArea(){
         resolve(listArea);    //Carry out the listArea on a resolve
     });
     loader.addEventListener('error', function(){
-        reject();
+        reject(console.log("you suck"));
     });
     loader.open("GET", `https://buccaneers-theme-park.firebaseio.com/areas.json`);
     loader.send();
     });
 }
-
-function area1(id){
-    console.log("fetching area 1");
+//// Getter for all AREAS ////
+function grabArea(id){
+    console.log("fetching any specified area");
     return new Promise((resolve,reject) => {
         var loader = new XMLHttpRequest();
 
@@ -51,5 +51,27 @@ function area1(id){
     });
 }
 
+///Setter for all areas to 
 
-module.exports={ test, dataArea, area1};
+
+   
+
+
+
+    //        var sendTo = document.getElementById("areaList");
+//    var outputString ="";
+// );
+
+
+// function listAttractions(attractions) {
+//     var list = document.getElementById("areaList");
+//     var outputString = "";
+
+//     console.log("setting to DOM");
+// for (var i = 0; i < attractions.lenght; i++) {
+//     var currentAttractions = attractions[i];
+//     // build up DOM string
+// }
+// }
+
+module.exports={ test, dataArea, grabArea};
