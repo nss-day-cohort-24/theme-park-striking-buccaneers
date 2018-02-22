@@ -10,4 +10,4 @@ function area1ShowTimes(id) {
     console.log("fetching area 1 showtimes");
 }
 
-module.exports
+// module.exports
