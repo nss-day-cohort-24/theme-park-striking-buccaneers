@@ -4,25 +4,26 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Unitainment Theme Park - Striking Buccaneers!</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="dist/css/main.css" />
+        <title>Explore | Pirate's Cove</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="dist/css/main.css" />
 </head>
-<body>
+<body onload="map_image()">
   <header>
     <nav class="navbar navbar-expand-sm fixed-top">
-      <div class="col-2"> 
-        <a class="navbar-brand" href="/index.html"><img src="../images/LogoAlt2_PiratesCove-500.png" width="120px" alt="Pirate's Cove brand mark pirate flag"></a>
+      <div class="col-md-2"> 
+        <a class="navbar-brand" href="/index.html"><img src="../images/LogoAlt3_PiratesCove-500.png" width="120px" alt="Pirate's Cove brand mark pirate flag"></a>
       </div>
-      <div class="col-6">
+      <div class="col-md-6">
         <input class="search form-control-md" type="text" placeholder="Search Pirate's Cove">
         <button class="btn btn-search" type="submit">Search</button>
       </div>
         <!-- Links -->
-      <div class="col-4">
+      <div class="col-md-4">
         <ul class="navbar-nav navbar-right">
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
@@ -46,9 +47,43 @@
   <main>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-3" id="areaList">
-                    <div class="instructions" id="instructions"><h3>Welcome to the Pirate's Cove Interactive Map!</h3><br><h4>Instructions on how to use this map:</h4><br><ul><li>Click on a section of the map with a number to see that area of Pirate's Cove</li><li>View and read about all of the attractions and areas to visit in that area of the park.</li><li>To view another area of the park, click on another number on the Pirate's Cove Map</li><li>Have fun!</li></div>
-
+                <div class="col-3">
+                    <div class="instructions" id="instructions">
+                      <h3>Welcome to the Pirate's Cove Interactive Map!</h3>
+                      <br>
+                      <h4>Instructions on how to use this map:</h4>
+                      <br>
+                      <ul>
+                        <li>Click on a section of the map with a number to see that area of Pirate's Cove</li>
+                        <li>View and read about all of the attractions and areas to visit in that area of the park.</li><li>To view another area of the park, click on another number on the Pirate's Cove Map</li><li>Have fun!</li></div>
+                        <div class="card dropdown_map">
+                            <div class="card-body">
+                              <h5 class="card-title"> View the List of Attraction Showtimes</h5>
+                              <!--<p class="card-text">Checkout Our Interactive Map</p>-->
+                              <div class="dropdown dropdown_map">
+                                  <button type="button" class="btn btn-danger
+                                  dropdown-toggle" data-toggle="dropdown">
+                                    Select Showtimes
+                                  </button>
+                                  <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">9:00am</a>
+                                    <a class="dropdown-item" href="#">10:00am</a>
+                                    <a class="dropdown-item" href="#">11:00am</a>
+                                    <a class="dropdown-item" href="#">12:00pm</a>
+                                    <a class="dropdown-item" href="#">1:00pm</a>
+                                    <a class="dropdown-item" href="#">2:00pm</a>
+                                    <a class="dropdown-item" href="#">3:00pm</a>
+                                    <a class="dropdown-item" href="#">4:00pm</a>
+                                    <a class="dropdown-item" href="#">5:00pm</a>
+                                    <a class="dropdown-item" href="#">6:00pm</a>
+                                    <a class="dropdown-item" href="#">7:00pm</a>
+                                    <a class="dropdown-item" href="#">8:00pm</a>
+                                    <a class="dropdown-item" href="#">9:00pm</a>
+                                  </div>
+                                </div>
+                            </div>
+                            <!--<img class="card-img-bottom" src="img_avatar6.png" alt="Card image" style="width:100%">-->
+                          </div>
 
                     <div class="map_class hidden" id="1">1</div>
                     <div class="map_class" id="2">2</div>
@@ -60,19 +95,62 @@
                     <div class="map_class" id="8">8</div>
                 </div>
                 <div class="col-9">
-                <img src="images/map_PiratesCove.jpg" width="100%">
-                </div><!--col-6-->
+                    <div class="card bg-dark text-white">
+                        <img class="card-img" src="images/map_PiratesCove.jpg" alt="Card image" width="100%">
+                        <div class="card-img-overlay">
+                    <div class="row stackem">
+                        <div class="col map_class" id="1">1</div>
+                        <div class="col map_class" id="2">2</div>
+                        <div class="col map_class" id="3">3</div>
+                    </div>
+                    <div class="row stackem">
+                        <div class="col map_class" id="4">4</div>
+                        <div class="col map_class" id="5">5</div>
+                        <div class="col map_class" id="6">6</div>
+                    </div>
+                    <div class="row stackem">
+                        <div class="col map_class" id="7">7</div>
+                        <div class="col map_class" id="8">8</div>
+                        <div class="col map_class" id="9">9</div>
+                      </div>
+                    </div>
+                  </div>
+                
+                </div><!--col-9-->
                 
           </div><!--row-->
       </div><!--container-fluid-->
   </main>    
       
   <footer>
-    <p>Copyright Information</p>
-  </footer>
 
+      <div class="row">
+          <div class="col col-3">
+              <h4>Top Attractions</h4>
+                <ul>
+                  <li>Item One</li>
+                  <li>Item Two</li>
+                  <li>Item Three</li>
+                </ul>
+            </div>
+        <div class="col col-center col-6">
+          <h4>Visit Us</h4>
+          <p>Sunday-Saturday: 9am - 10pm</p>
+          <btn class="btn btn-dark">Purchase Tickets</btn>
+        </div>
+        <div class="col col-3">
+            <h4>Social Media</h4>
+            <div class="social">
+                <!--instagram--><a href="https://www.instagram.com/piratescove/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <!--linkedin--><a href="https://www.facebook.com/piratescove/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <!--twitter--><a href="https://twitter.com/piratescove" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-sm-12" id="copyright">replace</div>
+      </div>
+    </footer>
     <script src="dist/app.js"></script>
-
-
 </body>
 </html>
