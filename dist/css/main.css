@@ -39,4 +39,11 @@ footer {
   color: #ffffff;
   font-family: "Libre Franklin", Helvetica, Arial, sans-serif; }
 
+.carousel-inner img {
+  width: 100%;
+  height: 100%; }
+
+.hidden {
+  display: none; }
+
 /*# sourceMappingURL=main.css.map */
