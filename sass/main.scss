@@ -22,10 +22,18 @@ nav{
     position: sticky;
     margin: auto;
     top: 0;
+    display: flex;
 }
+ nav .row{
+     flex-wrap: wrap;
+ }
+
+ nav .col{
+     border: 3px solid green;
+ }
 
 .search {
-    width: 500px;
+    width: 75%;
 }
 
 .btn-search{
@@ -81,16 +89,41 @@ h3{
     text-transform: uppercase;
 }
 
+h4{
+    font-family: $headings-text;
+    font-weight: 800;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
 footer{
     background-color: $red;
     color: $white;
     font-family: $primary-text;
     padding: 0;
+    justify-content: space-between;
 }
 
-footer p{
+footer .col{
     padding: 3em;
     margin: 0em;
+}
+
+footer .col-center{
+    text-align: center;
+}
+
+footer h4{
+    text-align: center;
+}
+
+.social{
+    text-align: center;
+}
+.social a{
+    color: $white;
+    font-size: 2em;
+    padding: .5em;
 }
 
 .carousel-inner img {
