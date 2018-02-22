@@ -61,7 +61,7 @@ body{
 }
 
 main{
-    margin-top: 135px;
+    margin-top: 75px;
     padding: 1em;
 }
 
@@ -136,12 +136,20 @@ footer h4{
     display: none;
 }
 
-.card{
-    margin: 20px 10px;
+
+
+.main_card{
+    margin: 50px 10px;
 }
 .card-body{
-    margin: 20px;
+    margin: 25px;
+    padding: 20px;
 }
 #demo{
     margin-left: 15px;
+}
+
+.dropdown_map{
+    padding: 2px;
+    margin: 5px;
 }
