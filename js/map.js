@@ -4,6 +4,10 @@
 
 // INSTRUCTIONS
 
+//var myImage = new Image();
+//myImage.src = 'images/map_PiratesCove.jpg';
+//document.body.appendChild(myImage);
+
 let instructions = document.getElementById("instructions");
 let mapAreas = document.getElementsByClassName("map_class");
 let emptyCells = document.getElementById("empty");
@@ -17,7 +21,14 @@ let defaultInstructionText = "<h3>Welcome to the Pirate's Cove Interactive Map!<
         // PROMISE GOES IN HERE
         instructions.innerHTML = defaultInstructionText;
         e.stopPropagation(); // stop any other listeners from hearing this event
-    }
+   
+  let block = `<section id="card--${index}" class="card-wrapper" style="border: 2px solid black">
+  <h4><a href="#">${attraction.name}</a>  (${attraction_type.name})</h4>
+  <p class="card-copy">${attraction.description}</p></section>`;
+  return block;
+
+};
+
 
     window.addEventListener("click", displayArea);
 
@@ -30,7 +41,7 @@ let defaultInstructionText = "<h3>Welcome to the Pirate's Cove Interactive Map!<
         mapAreas[i].addEventListener("click", displayArea);
     }
 
-    // for loop for the empty cells to add event listener to change content to default instructions
+// for loop for the empty cells to add event listener to change content to default instructions
 
     console.log("mapAreas", mapAreas);
 // module.exports = {testing};
