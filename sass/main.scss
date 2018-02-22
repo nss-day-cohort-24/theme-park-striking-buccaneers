@@ -12,10 +12,48 @@ $headings-text:'BioRhyme', Palatino, serif;
 
 
 // B A S E S T Y L E S
+
+nav{
+    // background: linear-gradient(to bottom $black, $grey, $white);
+    background-color: $black;
+    color: $white;
+    font-family: $primary-text;
+    border-bottom: 3px solid $red;
+    position: sticky;
+    margin: auto;
+    top: 0;
+}
+
+.search {
+    width: 500px;
+}
+
+.btn-search{
+    background-color: $red;
+    border-color: $red;
+    color: $white;
+}
+.btn-search:hover{
+    background-color: $orange;
+    border-color: $orange;
+    color: $white;
+}
+
+nav a{
+    color:$white;
+}
+nav a:hover{
+    color: $orange;
+}
+
 body{
     color: $black;
     font-family: $primary-text;
     font-size: 16px;
+}
+
+main{
+    margin-top: 135px;
     padding: 1em;
 }
 
@@ -43,19 +81,16 @@ h3{
     text-transform: uppercase;
 }
 
-nav{
+footer{
     background-color: $red;
     color: $white;
     font-family: $primary-text;
-    position: sticky;
-    margin: auto;
-    top: 0;
+    padding: 0;
 }
 
-footer{
-    background-color: $grey;
-    color: $white;
-    font-family: $primary-text;
+footer p{
+    padding: 3em;
+    margin: 0em;
 }
 
 .carousel-inner img {
