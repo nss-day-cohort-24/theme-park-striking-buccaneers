@@ -32,7 +32,8 @@ function displayArea(e) {
 }
 
 function setdefaultInstructionsText() {
-        // instructions to equal default instructions 
+        // if area 9 is selected (empty), then print defaultInstructionText
+        // create a button that says "see instructions" which will print defaultInstructionText
     }
 
 
