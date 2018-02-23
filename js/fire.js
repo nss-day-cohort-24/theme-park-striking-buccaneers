@@ -80,4 +80,4 @@ function grabArea(id){
 // }
 // }
 
-module.exports={ test, dataArea, grabArea};
+module.exports={dataArea, grabArea};

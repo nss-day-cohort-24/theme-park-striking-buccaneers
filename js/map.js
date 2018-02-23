@@ -14,22 +14,27 @@ let instructions = document.getElementById("instructions");
 let mapAreas = document.getElementsByClassName("map_class");
 let emptyCells = document.getElementById("empty");
 let defaultInstructionText = "<h3>Welcome to the Pirate's Cove Interactive Map!</h3><br><h4>Instructions on how to use this map:</h4><br><ul><li>Click on a section of the map with a number to see that area of Pirate's Cove</li><li>View and read about all of the attractions and areas to visit in that area of the park.</li><li>To view another area of the park, click on another number on the Pirate's Cove Map</li><li>Have fun!</li>";
-
+let printFire = document.getElementById("areaList");
 
 
 //AREA DISPLAYS
 function displayArea(e) {
         console.log("Hello", e.target.id);  
-        return dataArea(e.target.id);
-        // instructions.innerHTML = defaultInstructionText;
-        // e.stopPropagation(); // stop any other listeners from hearing this event
-   
-//   let block = `<section id="card--${index}" class="card-wrapper" style="border: 2px solid black">
-//   <h4><a href="#">${attraction.name}</a>  (${attraction_type.name})</h4>
-//   <p class="card-copy">${attraction.description}</p></section>`;
-//   return block;
-
-}
+        grabArea(e.target.id)
+.then(function(response){
+    // console.log("response: ", response);
+    let keys = Object.keys(response);
+    // console.log("keys", keys);
+    keys.forEach(function(item){
+        // console.log("attraction names: ", response[item].name, "description: ", response[item].description);
+        printFire.innerHTML += `<p><a href="#">${response[item].name}</a></p>`;   
+    });
+// let block = `<section id="card--${}" class="card-wrapper" style="border: 2px solid black">
+// <h3><a href="#">${response[item].name}</a>  (${response[item].type_id})</h3>
+// </section>`;
+// return block;
+});
+} 
 
 function setdefaultInstructionsText() {
         // if area 9 is selected (empty), then print defaultInstructionText
@@ -44,7 +49,8 @@ function setdefaultInstructionsText() {
 // for loop for the empty cells to add event listener to change content to default instructions
 
     console.log("mapAreas", mapAreas);
-// module.exports = {testing};
+
+module.exports = {displayArea};
 
 
 // use an overlay with a grid, each cell would have its own class name or id

@@ -7,8 +7,7 @@ let testingGrab = require("./map");
 console.log("there");
 let moreGrab = require("./parse");
 console.log("everywhere");
-let newPrint = require("./print");
-// let fetchFirePrint = ;
+let printAttractions = require("./print");
 
 
 console.log("before test");
