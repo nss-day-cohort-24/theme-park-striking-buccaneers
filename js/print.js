@@ -1,10 +1,13 @@
 "use strict";
-let newAreaData = fetchFire.grabArea;
+
+let {grabArea} = require('./fire');
+
+
 let printFire = document.getElementById("areaList");
 
 
 function fetchFirePrint(id){     //wrapped in function so .then doesn't fire on its own
-    newAreaData(id)
+grabArea(id)
     .then(
         (data) => {
            printFire.innerHTML = `<h2>AREA${id}</h2>`;

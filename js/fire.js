@@ -17,22 +17,28 @@ let fireData;
 
 
 ///////////  FUNCTION TO FETCH AREA DATA   /////////////
-function dataArea(){
+function dataArea(areaId) {
+
     console.log("fetching");
     return new Promise((resolve,reject) => {
         var loader = new XMLHttpRequest();
-
-    loader.addEventListener('load', function(){
-        var listArea = JSON.parse(this.responseText);
-        resolve(listArea);    //Carry out the listArea on a resolve
-    });
-    loader.addEventListener('error', function(){
-        reject(console.log("you suck"));
-    });
-    loader.open("GET", `https://buccaneers-theme-park.firebaseio.com/areas.json`);
-    loader.send();
+        console.log("before load");
+        console.log("before open");
+        loader.open("GET", `https://buccaneers-theme-park.firebaseio.com/areas/${areaId}.json`);
+        console.log("before send");
+        loader.send();
+        loader.addEventListener('load', function(){
+            console.log("hey", JSON.parse(this.responseText));
+            resolve(JSON.parse(this.responseText));
+            // console.log()    //Carry out the listArea on a resolve
+        });
+        console.log("before error");
+        loader.addEventListener('error', function(){
+            reject(console.log("you suck"));
+        });
     });
 }
+
 //// Getter for all AREAS ////
 function grabArea(id){
     console.log("fetching any specified area");

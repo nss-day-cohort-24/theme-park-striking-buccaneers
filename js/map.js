@@ -1,5 +1,7 @@
 "use strict";
 
+let {dataArea, grabArea} = require('./fire');
+
     console.log("hello from map.js");
 
 // INSTRUCTIONS
@@ -16,23 +18,20 @@ let defaultInstructionText = "<h3>Welcome to the Pirate's Cove Interactive Map!<
 
 
 //AREA DISPLAYS
-    function displayArea(e) {
+function displayArea(e) {
         console.log("Hello", e.target.id);  
-        // PROMISE GOES IN HERE
-        instructions.innerHTML = defaultInstructionText;
-        e.stopPropagation(); // stop any other listeners from hearing this event
+        return dataArea(e.target.id);
+        // instructions.innerHTML = defaultInstructionText;
+        // e.stopPropagation(); // stop any other listeners from hearing this event
    
-  let block = `<section id="card--${index}" class="card-wrapper" style="border: 2px solid black">
-  <h4><a href="#">${attraction.name}</a>  (${attraction_type.name})</h4>
-  <p class="card-copy">${attraction.description}</p></section>`;
-  return block;
+//   let block = `<section id="card--${index}" class="card-wrapper" style="border: 2px solid black">
+//   <h4><a href="#">${attraction.name}</a>  (${attraction_type.name})</h4>
+//   <p class="card-copy">${attraction.description}</p></section>`;
+//   return block;
 
-};
+}
 
-
-    window.addEventListener("click", displayArea);
-
-    function setdefaultInstructionsText() {
+function setdefaultInstructionsText() {
         // instructions to equal default instructions 
     }
 

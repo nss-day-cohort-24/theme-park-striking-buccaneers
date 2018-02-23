@@ -1,31 +1,41 @@
 "use strict";
 console.log("hello MAIN js");
 
-let fetchFire = require("./fire");
+let {dataArea, grabArea} = require("./fire"); //destructure, to allow me to use what I need in this js file
+console.log("here");
 let testingGrab = require("./map");
+console.log("there");
 let moreGrab = require("./parse");
+console.log("everywhere");
 let newPrint = require("./print");
+// let fetchFirePrint = ;
 
-fetchFire.test();
+
+console.log("before test");
+
+// fetchFire.test();
 moreGrab.moreTest();
 
-fetchFire.dataArea()
+
+console.log("before data area");
+
+dataArea()
 .then((result) => {
     console.log(result);
 });
 
-fetchFire.grabArea(1)
+grabArea(1)
 .then((result) => {
-    fetchFirePrint();
+    // fetchFirePrint();
     console.log("YOOOOO");
 });
 
-fetchFire.grabArea(2)
+grabArea(2)
 .then((result) => {
     console.log(result);
 });
 
-fetchFire.grabArea(3)
+grabArea(3)
 .then((result) => {
     console.log(result);
 });
@@ -45,7 +55,7 @@ fetchFire.grabArea(3)
 
 //Copyright//
 var currentDate = new Date();
-var monthIndex = new Array();
+var monthIndex = new Array([]);
     monthIndex[0] = "January";
     monthIndex[1] = "February";
     monthIndex[2] = "March";
@@ -63,6 +73,7 @@ var year = currentDate.getFullYear();
 var copyright = document.getElementById("copyright");
 function showCopyright(){
     copyright.innerHTML = `&copy; ${month} ${year}. Unitainment Corp. <br />All rights reserved.`;
-};
+}
 showCopyright();
 
+module.exports = {dataArea, grabArea};
