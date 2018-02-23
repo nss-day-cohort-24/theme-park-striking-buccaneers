@@ -17,24 +17,47 @@ let defaultInstructionText = "<h3>Welcome to the Pirate's Cove Interactive Map!<
 let printFire = document.getElementById("areaList");
 
 
-//AREA DISPLAYS
-function displayArea(e) {
+// AREA DISPLAY
+// function displayArea(e) {
+//     console.log("Hello", e.target.id);  
+//     dataArea(e.target.id)
+// .then(function(response){
+// // console.log("response: ", response);
+// let keys = Object.keys(response);
+// // console.log("keys", keys);
+// keys.forEach(function(item){
+//     // console.log("attraction names: ", response[item].name, "description: ", response[item].description);
+//     printFire.innerHTML += `<p><a href="#">${response[item].name}</a></p>`;   
+// });
+// });
+// } 
+
+//ATTRACTION DISPLAY
+function displayAttraction(e) {
         console.log("Hello", e.target.id);  
         grabArea(e.target.id)
 .then(function(response){
     // console.log("response: ", response);
     let keys = Object.keys(response);
     // console.log("keys", keys);
+    let listofAttractions = "";
     keys.forEach(function(item){
-        // console.log("attraction names: ", response[item].name, "description: ", response[item].description);
-        printFire.innerHTML += `<p><a href="#">${response[item].name}</a></p>`;   
+        // console.log("attraction names: ", response[item].name, "description: ", response[item].description);  
+        // console.log("response item: ", response[item]);
+        // console.log("e target", e.target.getAttribute("id"));
+        if(response[item].area_id == e.target.getAttribute("id")){ 
+            listofAttractions += `<p><a href="#">${response[item].name}</a></p>`;
+        }else{console.log("error!!!");
+        }
     });
+    printFire.innerHTML = listofAttractions;
+});
+} 
+
 // let block = `<section id="card--${}" class="card-wrapper" style="border: 2px solid black">
 // <h3><a href="#">${response[item].name}</a>  (${response[item].type_id})</h3>
 // </section>`;
 // return block;
-});
-} 
 
 function setdefaultInstructionsText() {
         // if area 9 is selected (empty), then print defaultInstructionText
@@ -42,15 +65,19 @@ function setdefaultInstructionsText() {
     }
 
 
-    for (let i = 0; i < mapAreas.length; i++){
-        mapAreas[i].addEventListener("click", displayArea);
-    }
+    // for (let i = 0; i < mapAreas.length; i++){
+    //     mapAreas[i].addEventListener("click", displayArea);
+    // }
 
 // for loop for the empty cells to add event listener to change content to default instructions
 
+for (let i = 0; i < mapAreas.length; i++){
+    mapAreas[i].addEventListener("click", displayAttraction);
+}
+
     console.log("mapAreas", mapAreas);
 
-module.exports = {displayArea};
+module.exports = {displayAttraction};
 
 
 // use an overlay with a grid, each cell would have its own class name or id

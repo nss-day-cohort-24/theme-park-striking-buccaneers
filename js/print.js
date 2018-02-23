@@ -4,6 +4,7 @@ console.log("PRINTjs HAS ARRIVED!");
 // let {grabArea, dataArea} = require('./fire');
 let fetchFire = require('./fire');
 let displayArea = require('./map');
+let displayAttraction = require('./map');
 
 //EMPTY ARRAYS
 let areaArray = [];
