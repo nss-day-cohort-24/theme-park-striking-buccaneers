@@ -1,56 +1,14 @@
 "use strict";
 console.log("hello MAIN js");
 
-let {dataArea, grabArea} = require("./fire"); //destructure, to allow me to use what I need in this js file
+let fire = require("./fire"); //destructure, to allow me to use what I need in this js file
 console.log("here");
-let testingGrab = require("./map");
+let map = require("./map");
 console.log("there");
-let moreGrab = require("./parse");
-console.log("everywhere");
-let printAttractions = require("./print");
+// let parse = require("./parse");
+// console.log("everywhere");
+// let printAttractions = require("./print");
 
-
-console.log("before test");
-
-// fetchFire.test();
-moreGrab.moreTest();
-
-
-console.log("before data area");
-
-dataArea()
-.then((result) => {
-    console.log(result);
-});
-
-grabArea(1)
-.then((result) => {
-    // fetchFirePrint();
-    console.log("YOOOOO");
-});
-
-grabArea(2)
-.then((result) => {
-    console.log(result);
-});
-
-grabArea(3)
-.then((result) => {
-    console.log(result);
-});
-
-//FUNCTIONS TO POST DATA TO DOM BY ID ///////////////////////
-
-
-
-
-// function populatePage(attractions){
-//     let sendTo = document.createElement("div");
-//     console.log("attractions", attractions);
-//     sendTo.innerHTML = attractions.map(fetchFire.dataArea);
-//     document.getElementById("areaList").append(sendTo);
-
-// }
 
 //Copyright//
 var currentDate = new Date();
@@ -74,5 +32,3 @@ function showCopyright(){
     copyright.innerHTML = `&copy; ${month} ${year}. Unitainment Corp. <br />All rights reserved.`;
 }
 showCopyright();
-
-module.exports = {dataArea, grabArea};

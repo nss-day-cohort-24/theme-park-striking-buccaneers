@@ -18,12 +18,13 @@ var attractionData;
 
 
 //FUNCTIONS
-function printAttractions(){
-    // console.log("SHOW UP printAttractions function");
-    printFire.innerHTML = `<h2>AREA${displayArea()}</h2>`;
-} 
+// function printAttractions(){
+//     // console.log("SHOW UP printAttractions function");
+//     printFire.innerHTML = `<h2>AREA${displayArea()}</h2>`;
+// } 
 
-printAttractions();
+
+// printAttractions();
 
 // function fetchFirePrint(id){     //wrapped in function so .then doesn't fire on its own
 // grabArea(id)
@@ -44,4 +45,4 @@ printAttractions();
 //     );
 // }
 
-module.exports= {printAttractions};
+// module.exports= {printAttractions};
