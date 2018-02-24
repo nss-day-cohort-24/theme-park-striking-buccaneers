@@ -34,7 +34,7 @@ let printFire = document.getElementById("areaList");
 
 //ATTRACTION DISPLAY
 function displayAttraction(e) {
-        console.log("Hello", e.target.id);  
+        // console.log("Hello", e.target.id); 
         grabArea(e.target.id)
 .then(function(response){
     // console.log("response: ", response);
@@ -52,30 +52,13 @@ function displayAttraction(e) {
     });
     printFire.innerHTML = listofAttractions;
 });
-} 
-
-// let block = `<section id="card--${}" class="card-wrapper" style="border: 2px solid black">
-// <h3><a href="#">${response[item].name}</a>  (${response[item].type_id})</h3>
-// </section>`;
-// return block;
-
-function setdefaultInstructionsText() {
-        // if area 9 is selected (empty), then print defaultInstructionText
-        // create a button that says "see instructions" which will print defaultInstructionText
-    }
-
-
-    // for (let i = 0; i < mapAreas.length; i++){
-    //     mapAreas[i].addEventListener("click", displayArea);
-    // }
-
-// for loop for the empty cells to add event listener to change content to default instructions
+}
 
 for (let i = 0; i < mapAreas.length; i++){
     mapAreas[i].addEventListener("click", displayAttraction);
 }
 
-    console.log("mapAreas", mapAreas);
+    // console.log("mapAreas", mapAreas);
 
 module.exports = {displayAttraction};
 

@@ -2,42 +2,38 @@
 console.log("hello MAIN js");
 
 let {dataArea, grabArea} = require("./fire"); //destructure, to allow me to use what I need in this js file
-console.log("here");
+// console.log("here");
 let testingGrab = require("./map");
-console.log("there");
-let moreGrab = require("./parse");
-console.log("everywhere");
-let printAttractions = require("./print");
-
+// console.log("there");
+let searchEngine = require('./searchEngine');
 
 console.log("before test");
 
-// fetchFire.test();
-moreGrab.moreTest();
+
 
 
 console.log("before data area");
 
-dataArea()
-.then((result) => {
-    console.log(result);
-});
+// dataArea()
+// .then((result) => {
+//     console.log(result);
+// });
 
-grabArea(1)
-.then((result) => {
-    // fetchFirePrint();
-    console.log("YOOOOO");
-});
+// grabArea(1)
+// .then((result) => {
+//     // fetchFirePrint();
+//     console.log("YOOOOO");
+// });
 
-grabArea(2)
-.then((result) => {
-    console.log(result);
-});
+// grabArea(2)
+// .then((result) => {
+//     console.log(result);
+// });
 
-grabArea(3)
-.then((result) => {
-    console.log(result);
-});
+// grabArea(3)
+// .then((result) => {
+//     console.log(result);
+// });
 
 //FUNCTIONS TO POST DATA TO DOM BY ID ///////////////////////
 
@@ -75,4 +71,4 @@ function showCopyright(){
 }
 showCopyright();
 
-module.exports = {dataArea, grabArea};
+module.exports = {dataArea, grabArea, searchEngine};
