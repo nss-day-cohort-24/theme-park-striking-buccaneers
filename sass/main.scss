@@ -147,7 +147,7 @@ footer h4{
 .main_card{
     margin: 50px 10px;
 }
-.card-body{
+.index-card{
     margin: 25px;
     padding: 20px;
 }
@@ -190,9 +190,18 @@ footer h4{
 
 }
 #sideList a:hover{
-    
-    color: $red;
+      color: $red;
 }
+
+.selectTime{
+    padding: 10px;
+    margin:5px;
+}
+.form-control{
+    width: 60%;
+    text-align: center;
+}
+
 
 // .col.map_class{
 //     color: black;
