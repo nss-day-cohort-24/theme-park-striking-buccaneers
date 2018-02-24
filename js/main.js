@@ -1,6 +1,6 @@
 "use strict";
 console.log("hello MAIN js");
-
+let currentTime = require("./currentTime");
 let fire = require("./fire"); //destructure, to allow me to use what I need in this js file
 console.log("here");
 let map = require("./map");
@@ -8,7 +8,8 @@ console.log("there");
 // let parse = require("./parse");
 // console.log("everywhere");
 // let printAttractions = require("./print");
-
+currentTime.test1();
+currentTime.attractionTimes();
 
 //Copyright//
 var currentDate = new Date();
