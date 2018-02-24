@@ -51,7 +51,7 @@ function displayAttraction(e) {
         // console.log("response item: ", response[item]);
         // console.log("e target", e.target.getAttribute("id"));
         if(response[item].area_id == e.target.getAttribute("id")){ 
-        listofAttractions += `<p><a href="#">${response[item].name}</a>&nbsp;(${response[item].type_id})</p>`;
+        listofAttractions += `<section id="sideList"><p><a href="#">${response[item].name}</a>&nbsp;(${response[item].type_id})</p></section>`;
         }else{console.log("error!!!");
         }
     });
