@@ -185,7 +185,14 @@ footer h4{
 #sideList a{
     color: $lightBlack;
     font: $primary-text;
+    text-decoration: underline;
+
 }
+#sideList a:hover{
+    
+    color: $red;
+}
+
 // .col.map_class{
 //     color: black;
 // }
