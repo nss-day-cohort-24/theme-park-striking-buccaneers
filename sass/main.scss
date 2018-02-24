@@ -9,6 +9,7 @@ $grey: #69645e;
 $orange: #ff8e0c;
 $primary-text: 'Libre Franklin', Helvetica, Arial, sans-serif;
 $headings-text:'BioRhyme', Palatino, serif;
+$lightBlack: #383838;
 
 
 // B A S E S T Y L E S
@@ -172,10 +173,18 @@ footer h4{
     color: white;
 }
 
-#sideList {
-    border-style: 2px solid black;
-    margin:5px;
-    padding:7px;
+#sideList p{
+    border: 0.5px solid lightgrey;
+    //background-color: blue;
+    margin:10px;
+    padding:10px;
+    line-height: initial;
+    color: $lightBlack;
+}
+
+#sideList a{
+    color: $lightBlack;
+    font: $primary-text;
 }
 // .col.map_class{
 //     color: black;
