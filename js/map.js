@@ -51,8 +51,22 @@ function displayAttraction(e) {
         // console.log("response item: ", response[item]);
         // console.log("e target", e.target.getAttribute("id"));
         if(response[item].area_id == e.target.getAttribute("id")){ 
-        listofAttractions += `<section id="sideList"><p><a href="#">${response[item].name}</a>&nbsp;(${response[item].type_id})</p></section>`;
-        }else{console.log("error!!!");
+        //listofAttractions += `<section id="sideList"><p><a href="#">${response[item].name}</a>&nbsp;(${response[item].type_id})</p></section>`;
+        listofAttractions += `<div id="accordion">
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#${response[item].id}">
+            ${response[item].name}&nbsp;(${response[item].type_id})
+            </a>
+          </div>
+          <div id="${response[item].id}" class="collapse show">
+            <div class="card-body">
+            <p>${response[item].description}</p>
+            </div>
+          </div>
+        </div></div>`;
+        
+    }else{console.log("error!!!");
         }
     });
     printFire.innerHTML = listofAttractions;
@@ -61,11 +75,19 @@ function displayAttraction(e) {
 
 for (let i = 0; i < mapAreas.length; i++){
     mapAreas[i].addEventListener("click", displayAttraction);
+    
 }
+//ATTEMPTED: function to display the description of the attraction when the user clicks on
+// let highLight = document.getElementById('divOfMap').getElementsByTagName('DIV').addEventListener("click", keepHighligthed);
+// function keepHighligthed(){
+//     highLight.classList.toggle("mystyle");
+// };
+// keepHighligthed();
+
 
 console.log("mapAreas", mapAreas);
 
-module.exports = {displayAttraction};
+module.exports = {displayAttraction, keepHighligthed};
 
 
 // use an overlay with a grid, each cell would have its own class name or id

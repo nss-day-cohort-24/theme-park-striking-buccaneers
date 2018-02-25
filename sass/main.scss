@@ -172,6 +172,12 @@ footer h4{
     background-color: rgba(255, 255, 255, .5);
     color: white;
     border: 3px solid $red;
+    cursor: url(images/Logo_PiratesCove-500.png)4 12, pointer;
+}
+
+.mystyle {
+    background-color: rgb(249, 80, 255);
+    border: 3px solid black;
 }
 
 #sideList p{
@@ -200,6 +206,11 @@ footer h4{
 .form-control{
     width: 60%;
     text-align: center;
+}
+
+.card-header a{
+    color: $lightBlack;
+    font: $primary-text;
 }
 
 
