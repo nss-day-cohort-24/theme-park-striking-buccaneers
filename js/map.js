@@ -39,7 +39,7 @@ let printAreaName = document.getElementById("areaName");
 
 //ATTRACTION DISPLAY
 function displayAttraction(e) {
-        console.log("Hello", e.target.id);  
+        // console.log("Hello", e.target.id); 
         grabArea(e.target.id)
 .then(function(response){
     // console.log("response: ", response);
@@ -77,6 +77,7 @@ for (let i = 0; i < mapAreas.length; i++){
     mapAreas[i].addEventListener("click", displayAttraction);
     
 }
+
 //ATTEMPTED: function to display the description of the attraction when the user clicks on
 // let highLight = document.getElementById('divOfMap').getElementsByTagName('DIV').addEventListener("click", keepHighligthed);
 // function keepHighligthed(){
@@ -85,7 +86,9 @@ for (let i = 0; i < mapAreas.length; i++){
 // keepHighligthed();
 
 
-console.log("mapAreas", mapAreas);
+    // console.log("mapAreas", mapAreas);
+
+
 
 module.exports = {displayAttraction};
 
