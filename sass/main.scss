@@ -172,17 +172,16 @@ footer h4{
     background-color: rgba(255, 255, 255, .5);
     color: white;
     border: 3px solid $red;
-    cursor: url(images/Logo_PiratesCove-500.png)4 12, pointer;
+    cursor: pointer;
 }
-
-.mystyle {
-    background-color: rgb(249, 80, 255);
-    border: 3px solid black;
-}
+//added style to area when selected on map
+// .mystyle {
+//     background-color: rgb(249, 80, 255);
+//     border: 3px solid black;
+// }
 
 #sideList p{
     border: 0.5px solid lightgrey;
-    //background-color: blue;
     margin:10px;
     padding:10px;
     line-height: initial;
