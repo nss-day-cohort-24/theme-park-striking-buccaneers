@@ -39,7 +39,7 @@ let printAreaName = document.getElementById("areaName");
 
 //ATTRACTION DISPLAY
 function displayAttraction(e) {
-        console.log("Hello", e.target.id);  
+        // console.log("Hello", e.target.id); 
         grabArea(e.target.id)
 .then(function(response){
     // console.log("response: ", response);
@@ -62,8 +62,8 @@ function displayAttraction(e) {
 for (let i = 0; i < mapAreas.length; i++){
     mapAreas[i].addEventListener("click", displayAttraction);
 }
+    // console.log("mapAreas", mapAreas);
 
-console.log("mapAreas", mapAreas);
 
 module.exports = {displayAttraction};
 
