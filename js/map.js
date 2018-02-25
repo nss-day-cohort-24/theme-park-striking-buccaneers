@@ -59,7 +59,7 @@ function displayAttraction(e) {
             ${response[item].name}&nbsp;(${response[item].type_id})
             </a>
           </div>
-          <div id="${response[item].id}" class="collapse show">
+          <div id="${response[item].id}" class="collapse">
             <div class="card-body">
             <p>${response[item].description}</p>
             </div>
