@@ -87,7 +87,7 @@ for (let i = 0; i < mapAreas.length; i++){
 
 console.log("mapAreas", mapAreas);
 
-module.exports = {displayAttraction, keepHighligthed};
+module.exports = {displayAttraction};
 
 
 // use an overlay with a grid, each cell would have its own class name or id
