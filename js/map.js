@@ -15,22 +15,27 @@ let mapAreas = document.getElementsByClassName("map_class");
 let emptyCells = document.getElementById("empty");
 let defaultInstructionText = "<h3>Welcome to the Pirate's Cove Interactive Map!</h3><br><h4>Instructions on how to use this map:</h4><br><ul><li>Click on a section of the map with a number to see that area of Pirate's Cove</li><li>View and read about all of the attractions and areas to visit in that area of the park.</li><li>To view another area of the park, click on another number on the Pirate's Cove Map</li><li>Have fun!</li>";
 let printFire = document.getElementById("areaList");
+let printAreaName = document.getElementById("areaName");
 
 
 // AREA DISPLAY
-// function displayArea(e) {
-//     console.log("Hello", e.target.id);  
-//     dataArea(e.target.id)
+// function displayArea(f) {
+//     console.log("Hello DISPLAY AREA: ", f.target.name);  
+//     dataArea(f.target.name)
 // .then(function(response){
 // // console.log("response: ", response);
 // let keys = Object.keys(response);
-// // console.log("keys", keys);
+//     let areaNameTemp = "";
 // keys.forEach(function(item){
-//     // console.log("attraction names: ", response[item].name, "description: ", response[item].description);
-//     printFire.innerHTML += `<p><a href="#">${response[item].name}</a></p>`;   
-// });
+//     areaNameTemp = `<h3>${response[item].name}</h3>`;
+//     console.log("showing area name temp: ", areaNameTemp);
+//  });
+//     printAreaName.innerHTML = areaNameTemp;
 // });
 // } 
+
+// displayArea();
+
 
 //ATTRACTION DISPLAY
 function displayAttraction(e) {
@@ -46,19 +51,19 @@ function displayAttraction(e) {
         // console.log("response item: ", response[item]);
         // console.log("e target", e.target.getAttribute("id"));
         if(response[item].area_id == e.target.getAttribute("id")){ 
-            listofAttractions += `<p><a href="#">${response[item].name}</a></p>`;
+        listofAttractions += `<section id="sideList"><p><a href="#">${response[item].name}</a>&nbsp;(${response[item].type_id})</p></section>`;
         }else{console.log("error!!!");
         }
     });
     printFire.innerHTML = listofAttractions;
 });
-}
+} 
 
 for (let i = 0; i < mapAreas.length; i++){
     mapAreas[i].addEventListener("click", displayAttraction);
 }
-
     // console.log("mapAreas", mapAreas);
+
 
 module.exports = {displayAttraction};
 

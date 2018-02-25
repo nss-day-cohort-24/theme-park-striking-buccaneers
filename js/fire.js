@@ -33,6 +33,24 @@ function grabArea(id){
     });
 }
 
+
+function attractionByType(id){
+    console.log("fetching attractions by type id");
+    return new Promise((resolve,reject) => {
+        var loader = new XMLHttpRequest();
+
+    loader.addEventListener('load', function(){
+        var listArea = JSON.parse(this.responseText);
+        resolve(listArea);    //Carry out the listArea on a resolve
+    });
+    loader.addEventListener('error', function(){
+        reject();
+    });
+    loader.open("GET", `https://buccaneers-theme-park.firebaseio.com/attractions.json?orderBy="type_id"&equalTo=${id}`);
+    loader.send();
+    });
+}
+
 ///Setter for all areas to 
 
     //        var sendTo = document.getElementById("areaList");

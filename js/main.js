@@ -48,6 +48,7 @@ console.log("before data area");
 
 // }
 
+
 //Copyright//
 var currentDate = new Date();
 var monthIndex = new Array([]);
@@ -70,5 +71,3 @@ function showCopyright(){
     copyright.innerHTML = `&copy; ${month} ${year}. Unitainment Corp. <br />All rights reserved.`;
 }
 showCopyright();
-
-module.exports = {dataArea, grabArea, searchEngine};

@@ -9,6 +9,7 @@ $grey: #69645e;
 $orange: #ff8e0c;
 $primary-text: 'Libre Franklin', Helvetica, Arial, sans-serif;
 $headings-text:'BioRhyme', Palatino, serif;
+$lightBlack: #383838;
 
 
 // B A S E S T Y L E S
@@ -146,7 +147,7 @@ footer h4{
 .main_card{
     margin: 50px 10px;
 }
-.card-body{
+.index-card{
     margin: 25px;
     padding: 20px;
 }
@@ -170,7 +171,37 @@ footer h4{
 .col.map_class:hover {
     background-color: rgba(255, 255, 255, .5);
     color: white;
+    border: 3px solid $red;
 }
+
+#sideList p{
+    border: 0.5px solid lightgrey;
+    //background-color: blue;
+    margin:10px;
+    padding:10px;
+    line-height: initial;
+    color: $lightBlack;
+}
+
+#sideList a{
+    color: $lightBlack;
+    font: $primary-text;
+    text-decoration: underline;
+
+}
+#sideList a:hover{
+      color: $red;
+}
+
+.selectTime{
+    padding: 10px;
+    margin:5px;
+}
+.form-control{
+    width: 60%;
+    text-align: center;
+}
+
 
 // .col.map_class{
 //     color: black;

@@ -16,8 +16,7 @@ let attractionsInfo = [];
 let printFire = document.getElementById("areaList");
 var attractionData;
 
-
-// //FUNCTIONS
+//FUNCTIONS
 // function printAttractions(){
 //     // console.log("SHOW UP printAttractions function");
 //     printFire.innerHTML = `<h2>AREA${displayArea()}</h2>`;
