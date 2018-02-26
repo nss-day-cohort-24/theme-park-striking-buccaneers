@@ -6,10 +6,11 @@ let {dataArea, grabArea} = require("./fire"); //destructure, to allow me to use 
 let testingGrab = require("./map");
 // console.log("there");
 let searchEngine = require('./searchEngine');
+let getTime = require("./currentTime");
 
 console.log("before test");
 
-
+getTime.getTimeDropdown();
 
 
 console.log("before data area");
