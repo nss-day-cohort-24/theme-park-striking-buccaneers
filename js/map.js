@@ -16,6 +16,18 @@ let emptyCells = document.getElementById("empty");
 let defaultInstructionText = "<h3>Welcome to the Pirate's Cove Interactive Map!</h3><br><h4>Instructions on how to use this map:</h4><br><ul><li>Click on a section of the map with a number to see that area of Pirate's Cove</li><li>View and read about all of the attractions and areas to visit in that area of the park.</li><li>To view another area of the park, click on another number on the Pirate's Cove Map</li><li>Have fun!</li>";
 let printFire = document.getElementById("areaList");
 let printAreaName = document.getElementById("areaName");
+var rideIndex = new Array([]);
+    rideIndex[0] = "null";
+    rideIndex[1] = "ride";
+    rideIndex[2] = "restaurant";
+    rideIndex[3] = "show";
+    rideIndex[4] = "vendor";
+    rideIndex[5] = "character meet";
+    rideIndex[6] = "animals";
+    rideIndex[7] = "game";
+    rideIndex[8] = "special event";
+    
+
 
 
 // AREA DISPLAY
@@ -50,13 +62,15 @@ function displayAttraction(e) {
         // console.log("attraction names: ", response[item].name, "description: ", response[item].description);  
         // console.log("response item: ", response[item]);
         // console.log("e target", e.target.getAttribute("id"));
+        var rideType = response[item].type_id;
+var finalType = rideIndex[rideType];
         if(response[item].area_id == e.target.getAttribute("id")){ 
         //listofAttractions += `<section id="sideList"><p><a href="#">${response[item].name}</a>&nbsp;(${response[item].type_id})</p></section>`;
         listofAttractions += `<div id="accordion">
         <div class="card">
           <div class="card-header attractionName">
             <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#${response[item].id}">
-            ${response[item].name}&nbsp;(${response[item].type_id})
+            ${response[item].name}&nbsp;(${finalType})
             </a>
           </div>
           <div id="${response[item].id}" class="collapse">
@@ -72,6 +86,7 @@ function displayAttraction(e) {
     printFire.innerHTML = listofAttractions;
 });
 } 
+
 
 for (let i = 0; i < mapAreas.length; i++){
     mapAreas[i].addEventListener("click", displayAttraction);
@@ -100,6 +115,11 @@ keys.forEach(function(item){
 printAreaName.innerHTML = nameArea;
 });
 } 
+
+// let typeAttraction = function displayAttractionType(type) {
+//     console.log("ATTRACTION TYPE: ", type.target.id);
+//     grabArea(type.target.id);
+// };
 
 
 
