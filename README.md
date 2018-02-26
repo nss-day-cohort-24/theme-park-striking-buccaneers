@@ -45,9 +45,5 @@ Unitainment is having a problem with long lines at the more popular rides and ex
 * Grid framework of your choice
 * Firebase for data storage and retrieval
 
-## Presentations
 
-1. You will be presenting to your client, Unitainment Theme Park.
-1. Each group's presentation should be no more than seven minutes (plan and practice so you are ready to go). 
-1. Your presentation must include: challenge statement, persona, demo of your application, lessons learned about development & design.
-1. Each group member must participate in the presentation.
+
