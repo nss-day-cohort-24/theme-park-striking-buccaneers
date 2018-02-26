@@ -5,14 +5,8 @@ let {dataArea, grabArea} = require("./fire"); //destructure, to allow me to use 
 // console.log("here");
 let testingGrab = require("./map");
 // console.log("there");
-let searchEngine = require('./searchEngine');
+let searchAttractions = require('./searchEngine');
 
-console.log("before test");
-
-
-
-
-console.log("before data area");
 
 // dataArea()
 // .then((result) => {
