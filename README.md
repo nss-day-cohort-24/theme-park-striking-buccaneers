@@ -7,7 +7,7 @@
 
 ## Theme Park Interactive Map
 
-> For, you know, This begun as a (Nashville Software School's)[http://nashvillesoftwareschool.com/] team Project to solve a problem with long lines at the more popular rides and exhibits and empty seats at the other entertainment options.
+> For, you know, This begun as a [Nashville Software School's](http://nashvillesoftwareschool.com/) team Project to solve a problem with long lines at the more popular rides and exhibits and empty seats at the other entertainment options.
 
 ### Requirements
 * Node v8.9.4 LTS or greater
@@ -16,7 +16,9 @@
 ```console
 git clone https://github.com/nss-day-cohort-24/theme-park-striking-buccaneers.git
 cd theme-park-striking-buccaneers
+cd lib
 npm install
+Run grunt
 ```
 
 ### Usage
