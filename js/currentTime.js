@@ -1,6 +1,7 @@
 "use strict";
 
 //Declare Variables//
+let printDiv = document.getElementById("printTime");
 let hour;
 let userHour = "c";
 let arrayNames = [];
@@ -55,9 +56,14 @@ function getTime(taco){
         arrayNames.push(newNames);
         arrayIndexLoc.push(locationTime);
         arrayIndexId.push(aId);
+    
+    
     }
+    showTimeData();
 }
 
+
+////// PRINT TIME //////
 function showTimeData() {
     hour = parseInt(hour);
 
@@ -71,6 +77,15 @@ function showTimeData() {
   if (hour2>12){
       h2disp = h2disp - 12;
       pm = "pm";
+}
+printDiv.innerHTML += `<h2>${hdisp}-${h2disp+pm}</h2>`;
+for (let i=0; i <arrayNames.length;i++){
+    let name = arrayNames[i];
+    let location = arrayIndexLoc[i];
+    let id = arrayIndexId[i];
+
+    printDiv.innerHTML += `<h3> class="attraction-time" id="${id}">${name}<br>`;
+    printDiv.innerHTML += `(${location}</h3>)<br>`;
 }
 }
 function matchArea(){
