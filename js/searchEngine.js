@@ -31,15 +31,15 @@ function search() {
 }
 search();
 
-function enter() {
-    console.log("enter function is working");
-    searchBtn.addEventListener("click", function enterForAttractions(results){
-        console.log("SEARCH BUTTON ENGAGED");
-        fire.dataArea();
-    });
 
-}
-enter();
+// function messageEnter(){
+//     if (event.which === 13 || event.keyCode == 13) {
+//         messageDisplay();
+//         return false;
+//     }
+// }
+
+
 
 
 
@@ -98,4 +98,4 @@ enter();
 //     printDiv.innerHTML = `${searchHead}`;
 // }
 
-module.exports = {search, enter};
+// module.exports = {search, enter};

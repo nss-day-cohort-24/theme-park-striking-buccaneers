@@ -78,6 +78,35 @@ for (let i = 0; i < mapAreas.length; i++){
     
 }
 
+
+
+for (let i = 0; i < mapAreas.length; i++){
+    mapAreas[i].addEventListener("click", displayAreaName);  
+}
+
+function displayAreaName(area) {
+    // console.log("Hello", area.target.id); 
+    grabArea(area.target.id)
+.then(function(display){
+// console.log("display: ", display);
+let keys = Object.keys(display);
+// console.log("keys", keys);
+let nameArea = "";
+keys.forEach(function(item){
+    // console.log("FOR EACH FUNCTION WORKS");
+   
+    if(display[item].area_id == area.target.getAttribute("id")){ 
+            // console.log("THE DISPLAY PART IS WORKING");
+        nameArea = `<div id="areaName" class="areaNameDisplay">${display[item].name}:</div>`;
+    
+}else{console.log("error!!!");
+    }
+});
+printAreaName.innerHTML = nameArea;
+});
+} 
+
+
 //ATTEMPTED: function to display the description of the attraction when the user clicks on
 // let highLight = document.getElementById('divOfMap').getElementsByTagName('DIV').addEventListener("click", keepHighligthed);
 // function keepHighligthed(){
@@ -90,7 +119,7 @@ for (let i = 0; i < mapAreas.length; i++){
 
 
 
-module.exports = {displayAttraction};
+module.exports = {displayAttraction, displayAreaName};
 
 
 // use an overlay with a grid, each cell would have its own class name or id
