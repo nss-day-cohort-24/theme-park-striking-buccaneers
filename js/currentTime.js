@@ -1,8 +1,11 @@
 "use strict";
 
 //Declare Variables//
+let fireGrab = require("./fire");
 let printDiv = document.getElementById("printTime");
 let hour;
+let number = 1;
+let selectedTime = "";
 let userHour = "c";
 let arrayNames = [];
 let arrayLocation = [];
@@ -50,7 +53,7 @@ function getTime(taco){
     }
     console.log(hour);
     if (hour== taco){
-        matchArea();
+        getArea();
         console.log("working");
 
         arrayNames.push(newNames);
@@ -88,7 +91,7 @@ for (let i=0; i <arrayNames.length;i++){
     printDiv.innerHTML += `(${location}</h3>)<br>`;
 }
 }
-function matchArea(){
+function getArea(){
     for(let i=0; i<arrayLocation.length; i++){
         let currentArea = arrayLocation[i].id;
         if(newLoc == currentArea){
@@ -96,4 +99,35 @@ function matchArea(){
         }
     }
 }
-module.exports={test1, timeNow, attractionTimes};
+//function to get current time
+
+function getTimeDropdown() {
+    document.getElementById("timeDropdown").addEventListener("change", function(){
+        console.log("Getting time from input");
+        fireGrab.grabArea(number)
+        .then((resolve)=>{
+            console.log("successfull Resolve");
+            printDiv.innerHTML = "";
+            let container = resolve;
+            let keys = Object.keys(container);
+            console.log("resolve has worked");
+            let selectedTimesList = sortByAttractionTime(container, keys);
+        
+        },
+        (reject)=>{}
+    );
+
+    });
+}
+
+function sortByAttractionTime(collection, keys) {
+    let allItems = [];
+    keys.forEach(function(item){
+        collection[item].times.for(function(time){
+            if(time.includes(selectedTime))
+            allItems.shift(item);
+        });
+    });
+    return allItems;
+}
+module.exports={test1, timeNow, attractionTimes, getTimeDropdown};
