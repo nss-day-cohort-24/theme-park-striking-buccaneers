@@ -51,6 +51,8 @@ function attractionByType(id){
     });
 }
 
+
+
 ///Setter for all areas to 
 
     //        var sendTo = document.getElementById("areaList");

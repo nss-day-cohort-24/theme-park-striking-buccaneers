@@ -142,8 +142,6 @@ footer h4{
     display: none;
 }
 
-
-
 .main_card{
     margin: 50px 10px;
 }
@@ -169,33 +167,19 @@ footer h4{
 }
 
 .col.map_class:hover {
-    background-color: rgba(255, 255, 255, .5);
-    color: white;
+    // background-color: rgba(167, 100, 25, 0.3);
+    color: rgb(0, 0, 0);
     border: 3px solid $red;
     cursor: pointer;
+    text-align: center;
 }
 //added style to area when selected on map
-// .mystyle {
-//     background-color: rgb(249, 80, 255);
-//     border: 3px solid black;
-// }
 
-#sideList p{
-    border: 0.5px solid lightgrey;
-    margin:10px;
-    padding:10px;
-    line-height: initial;
-    color: $lightBlack;
-}
 
-#sideList a{
-    color: $lightBlack;
-    font: $primary-text;
-    text-decoration: underline;
+.mystyle {
+    background-color: rgb(249, 80, 255);
+    border: 3px solid black;
 
-}
-#sideList a:hover{
-      color: $red;
 }
 
 .selectTime{
@@ -207,12 +191,51 @@ footer h4{
     text-align: center;
 }
 
-.card-header a{
+.card-header{
     color: $lightBlack;
     font: $primary-text;
 }
 
+.instructions-dropdown {
+ background-color: $red;
+}
 
+.collapseInstructions-1{
+    padding-top: 20px;
+}
+
+.attractionName a{
+    color: $lightBlack;
+    font:$primary-text;
+}
 // .col.map_class{
 //     color: black;
 // }
+
+.areaNameDisplay {
+    font-family: $headings-text;
+    font-weight: 800;
+    color: $red;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding-top: 1.25em;
+    text-align: center;
+}
+
+.areaNames {
+    font-family: $headings-text;
+    font-weight:500;
+    font-size: 2em;
+    text-align: center;
+    color: black;
+    font-weight: 800;
+    background-color: rgba(255, 255, 255, .5);
+    padding-top: 2em;
+    // margin-bottom: auto;
+    // padding: 5.95em;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -5,8 +5,15 @@ let {dataArea, grabArea} = require("./fire"); //destructure, to allow me to use 
 // console.log("here");
 let testingGrab = require("./map");
 // console.log("there");
-let searchAttractions = require('./searchEngine');
+let searchEngine = require('./searchEngine');
+let getTime = require("./currentTime");
 
+console.log("before test");
+
+getTime.getTimeDropdown();
+
+
+console.log("before data area");
 
 // dataArea()
 // .then((result) => {
@@ -58,10 +65,13 @@ var monthIndex = new Array([]);
     monthIndex[9] = "October";
     monthIndex[10] = "November";
     monthIndex[11] = "December";
+    var date = currentDate.getDate();
 var month = monthIndex[currentDate.getMonth()];
 var year = currentDate.getFullYear();
 var copyright = document.getElementById("copyright");
 function showCopyright(){
-    copyright.innerHTML = `&copy; ${month} ${year}. Unitainment Corp. <br />All rights reserved.`;
+    copyright.innerHTML = `&copy; ${month}&nbsp;${date},&nbsp;${year}. Unitainment Corp. <br />All rights reserved.`;
 }
 showCopyright();
+
+

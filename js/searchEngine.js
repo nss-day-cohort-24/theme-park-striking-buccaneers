@@ -139,7 +139,7 @@ function searchAttractions() {
 //             }
 //         },
 //         (reject) => {
-//             console.log("SOMETHING WENT REALLY WRONG");
+//             console.log("ERROR");
 //         }
 //     );
 // }
@@ -148,4 +148,8 @@ function searchAttractions() {
 //     printDiv.innerHTML = `${searchHead}`;
 // }
 
+<<<<<<< HEAD
 module.exports={searchAttractions};
+=======
+// module.exports = {search, enter};
+>>>>>>> master

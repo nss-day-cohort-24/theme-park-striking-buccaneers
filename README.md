@@ -1,53 +1,53 @@
-#INSTRUCTIONS FOR CREATING A README.md:
-
-As a user, I want well written instructions on how to use this application.
-
-Acceptance Criteria
-Given user wants to use this application
-When the user comes to the Github project page
-Then there should be a well written instructions on how to use this web application
-And there should be instructions for potential developers on how to get the project running in their local environment
+# Pirate's Cove Theme Park Interactive Map
+> Guide parents, teenagers, and families to navigate the Pirate’s Cove theme park so that adventure and fun are maximized as wait times are reduced and park resources are used more efficiently, giving park guests opportunities to chart their own course and discover a treasure trove of lifelong memories.
 
 
-
-# Theme Park Map Builder - Group Project
-
-## Client
-Unitainment Theme Park
-
-## Challenge Statement
-Unitainment is having a problem with long lines at the more popular rides and exhibits and empty seats at the other entertainment options. They want an interactive map of their theme park for guests to be able to find all the attractions and plan their visit. As a team, you will create this interactive map of a theme park. The park will include 8 areas with different attractions and events.
+![](images/Screenshot-PC.png)
 
 
-## Getting Started
+## Theme Park Interactive Map
 
-> **Pro Tip:** If you find yourself writing logic on the first day of the sprint, then you did not spend enough time planning, and gaining clarification on the acceptance criteria.
+> For, you know, This begun as a [Nashville Software School's](http://nashvillesoftwareschool.com/) team Project to solve a problem with long lines at the more popular rides and exhibits and empty seats at the other entertainment options.
 
-1. Be sure to review your design requirements [here](https://sites.google.com/susanculkin.com/fewdd-b/design-subjects/week-8/theme-park-project). 
-1. Review the [product owner's tickets](https://github.com/nashville-software-school/group-project-uix-theme-park/issues).
-1. Create Firebase account for your team upload the boilerplate JSON data for use in this application.
-1. Be sure to set your Firebase rules for indexing.
-1. Make sure you spend time defining MVP and creating a plan to reach that goal.
+### Requirements
+* Node v8.9.4 LTS or greater
+
+### Installation
+```console
+git clone https://github.com/nss-day-cohort-24/theme-park-striking-buccaneers.git
+cd theme-park-striking-buccaneers
+cd lib
+npm install
+Run grunt
+```
+
+### Usage
+1. Start the app
+```console
+cd lib
+Run grunt
+```
+2. Go to `localhost:http://127.0.0.1:8081/`
+
+## Contributing
+1. Look up in the project, look for the "to do" issue.
+2. Discuss what you would like to work on.
+3. Fork it!
+4. Create your feature branch: `git checkout -b my-new-feature`
+5. Commit your changes: `git commit`
+6. Push to the branch: `git push origin my-new-feature`
+7. Submit a pull request
 
 
 
-## Technical Considerations
-* Data is required to be requested from Firebase based on collections. Pull only what you need.
-* Consider encapsulating all Firebase calls into a single module.
-* Use SASS to control your color themes.
-* Incorporate a CSS grid framework
 
-## Technology Requirements
-* SASS 
-* Grunt (with JSHINT) 
-* Promises
-* Browserify
-* Grid framework of your choice
-* Firebase for data storage and retrieval
 
-## Presentations
 
-1. You will be presenting to your client, Unitainment Theme Park.
-1. Each group's presentation should be no more than seven minutes (plan and practice so you are ready to go). 
-1. Your presentation must include: challenge statement, persona, demo of your application, lessons learned about development & design.
-1. Each group member must participate in the presentation.
+
+
+
+
+
+
+
+
