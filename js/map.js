@@ -61,7 +61,7 @@ function displayAttraction(e) {
           </div>
           <div id="${response[item].id}" class="collapse">
             <div class="card-body">
-            ${response[item].description}
+            ${response[item].description}<p>Showtimes:&nbsp; ${response[item].times}</p>
             </div>
           </div>
         </div></div>`;
