@@ -54,7 +54,7 @@ function displayAttraction(e) {
         //listofAttractions += `<section id="sideList"><p><a href="#">${response[item].name}</a>&nbsp;(${response[item].type_id})</p></section>`;
         listofAttractions += `<div id="accordion">
         <div class="card">
-          <div class="card-header">
+          <div class="card-header attractionName">
             <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#${response[item].id}">
             ${response[item].name}&nbsp;(${response[item].type_id})
             </a>
