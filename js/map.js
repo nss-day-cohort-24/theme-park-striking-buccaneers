@@ -85,26 +85,22 @@ for (let i = 0; i < mapAreas.length; i++){
 }
 
 function displayAreaName(area) {
-    // console.log("Hello", area.target.id); 
-    grabArea(area.target.id)
+    console.log("Hello", (area.target.id) -1); 
+    dataArea((area.target.id) -1)
 .then(function(display){
-// console.log("display: ", display);
+console.log("display: ", display.name);
 let keys = Object.keys(display);
-// console.log("keys", keys);
+console.log("keys", keys);
 let nameArea = "";
 keys.forEach(function(item){
-    // console.log("FOR EACH FUNCTION WORKS");
+    console.log("FOR EACH FUNCTION WORKS");
+    nameArea = `<div id="areaName" class="areaNameDisplay">${display[item]}:</div>`;
    
-    if(display[item].area_id == area.target.getAttribute("id")){ 
-            // console.log("THE DISPLAY PART IS WORKING");
-        nameArea = `<div id="areaName" class="areaNameDisplay">${display[item].name}:</div>`;
-    
-}else{console.log("error!!!");
-    }
 });
 printAreaName.innerHTML = nameArea;
 });
 } 
+
 
 
 //ATTEMPTED: function to display the description of the attraction when the user clicks on
