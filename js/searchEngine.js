@@ -1,8 +1,20 @@
 "use strict";
-console.log("search engine js is showing up");
+console.log("searchengine.js is here!");
+
+//// REQUIRES ///
 let fire = require('./fire');
 let map = require('./map');
 let printJS = require('./print');
+
+
+//// VARIABLES ////
+let searchBar = document.getElementById("searchBar");
+let searchBtn = document.getElementById("search-btn");
+let searchResults = [];
+let searchString = "";
+
+//// FUNCTIONS ////
+
 
 
 // 1. make your call to FB to get all attractions DONE
@@ -19,10 +31,7 @@ let printJS = require('./print');
 
 // input = searchBarInput.value.toLowerCase();
 
-let searchBar = document.getElementById("searchBar");
-let searchBtn = document.getElementById("search-btn");
-let searchResults = [];
-let searchString = "";
+
 
 function search() {
     console.log("search function is working");

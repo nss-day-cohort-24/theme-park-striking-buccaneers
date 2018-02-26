@@ -1,5 +1,5 @@
 "use strict";
-
+console.log("fire.js has arrived!");
 
 ///////////  FUNCTION TO FETCH AREA DATA   /////////////
 function dataArea(areaId) {
