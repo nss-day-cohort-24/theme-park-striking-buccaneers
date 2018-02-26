@@ -49,9 +49,20 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-3">
-                    <div id="areaName"></div>
-                    <div id="areaList"><h3>Welcome to the Pirate's Cove Interactive Map!</h3><br><h4>Instructions on how to use this map:</h4><br><ul><li>Click on a section of the map with a number to see that area of Pirate's Cove</li><li>View and read about all of the attractions and areas to visit in that area of the park.</li><li>To view another area of the park, click on another number on the Pirate's Cove Map</li><li>Have fun!</li>
-                    </div>
+                    
+                    <div class="card">
+                      <div class="card-body">
+                          <h4>Welcome to the Pirate's Cove Interactive Map!</h4><br>
+                  <a class="btn btn-danger" role="button" data-toggle="collapse" href="#collapseInstructions" aria-expanded="false" aria-controls="collapseExample">
+                      <span class="glyphicon glyphicon-plus" style="color:white;float:right"></span>Click here for Navigation Instructions.
+                    </a>
+                    <div class="collapse" id="collapseInstructions">
+                        <div class="well collapseInstructions-1">
+                             <h5>Instructions on how to use this map:</h5><ul><li>Click on a section of the map with a number to see that area of Pirate's Cove</li><li>View and read about all of the attractions and areas to visit in that area of the park.</li><li>To view another area of the park, click on another number on the Pirate's Cove Map</li><li>Have fun!</li>
+                        </div>
+                      </div>
+                      </div><!--card-body-->
+                    </div><!--card-->
                     
                     
                     <div class="card" id="displayShowTimes">
@@ -83,6 +94,8 @@
                             </div>
                             <!--<img class="card-img-bottom" src="img_avatar6.png" alt="Card image" style="width:100%">-->
                           </div>
+                          <div id="areaName"></div>
+                    <div id="areaList"></div>
                 </div>
                 <div class="col-9">
                     <div class="card bg-dark text-white flex-container">

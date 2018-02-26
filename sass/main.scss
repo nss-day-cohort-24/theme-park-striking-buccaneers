@@ -142,8 +142,6 @@ footer h4{
     display: none;
 }
 
-
-
 .main_card{
     margin: 50px 10px;
 }
@@ -176,27 +174,12 @@ footer h4{
     text-align: center;
 }
 //added style to area when selected on map
-// .mystyle {
-//     background-color: rgb(249, 80, 255);
-//     border: 3px solid black;
-// }
 
-#sideList p{
-    border: 0.5px solid lightgrey;
-    margin:10px;
-    padding:10px;
-    line-height: initial;
-    color: $lightBlack;
-}
 
-#sideList a{
-    color: $lightBlack;
-    font-family: $primary-text;
-    text-decoration: underline;
+.mystyle {
+    background-color: rgb(249, 80, 255);
+    border: 3px solid black;
 
-}
-#sideList a:hover{
-      color: $red;
 }
 
 .selectTime{
@@ -211,6 +194,14 @@ footer h4{
 .card-header{
     color: $lightBlack;
     font: $primary-text;
+}
+
+.instructions-dropdown {
+ background-color: $red;
+}
+
+.collapseInstructions-1{
+    padding-top: 20px;
 }
 
 
