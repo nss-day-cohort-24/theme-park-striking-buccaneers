@@ -169,10 +169,11 @@ footer h4{
 }
 
 .col.map_class:hover {
-    background-color: rgba(255, 255, 255, .5);
-    color: white;
+    // background-color: rgba(167, 100, 25, 0.3);
+    color: rgb(0, 0, 0);
     border: 3px solid $red;
     cursor: pointer;
+    text-align: center;
 }
 //added style to area when selected on map
 // .mystyle {
@@ -190,7 +191,7 @@ footer h4{
 
 #sideList a{
     color: $lightBlack;
-    font: $primary-text;
+    font-family: $primary-text;
     text-decoration: underline;
 
 }
@@ -207,7 +208,7 @@ footer h4{
     text-align: center;
 }
 
-.card-header a{
+.card-header{
     color: $lightBlack;
     font: $primary-text;
 }
@@ -216,3 +217,29 @@ footer h4{
 // .col.map_class{
 //     color: black;
 // }
+
+.areaNameDisplay {
+    font-family: $headings-text;
+    font-weight: 800;
+    color: $red;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.areaNames {
+    font-family: $headings-text;
+    font-weight:500;
+    font-size: 2em;
+    text-align: center;
+    color: black;
+    font-weight: 800;
+    background-color: rgba(255, 255, 255, .5);
+    padding-top: 2em;
+    // margin-bottom: auto;
+    // padding: 5.95em;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
