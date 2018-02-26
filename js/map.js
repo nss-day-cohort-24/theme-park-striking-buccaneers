@@ -94,13 +94,8 @@ console.log("keys", keys);
 let nameArea = "";
 keys.forEach(function(item){
     console.log("FOR EACH FUNCTION WORKS");
+    nameArea = `<div id="areaName" class="areaNameDisplay">${display[item]}:</div>`;
    
-    if(display[item].area_id == area.target.getAttribute("id")){ 
-            console.log("THE DISPLAY PART IS WORKING");
-        nameArea = `<div id="areaName" class="areaNameDisplay">${display[item]}:</div>`;
-    
-}else{console.log("error!!!");
-    }
 });
 printAreaName.innerHTML = nameArea;
 });
