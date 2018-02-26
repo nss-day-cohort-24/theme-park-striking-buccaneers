@@ -1,13 +1,13 @@
 # Pirate's Cove Theme Park Interactive Map
 > Guide parents, teenagers, and families to navigate the Pirate’s Cove theme park so that adventure and fun are maximized as wait times are reduced and park resources are used more efficiently, giving park guests opportunities to chart their own course and discover a treasure trove of lifelong memories.
 
-[![NPM Version][npm-image]][npm-url]
 
-![](Screenshot-PC.png)
+![](images/Screenshot-PC.png)
+
 
 ## Theme Park Interactive Map
 
-> For, you know, This begun as a (Nashville Software School's t)[http://nashvillesoftwareschool.com/] team Project to solve a problem with long lines at the more popular rides and exhibits and empty seats at the other entertainment options.
+> For, you know, This begun as a (Nashville Software School's)[http://nashvillesoftwareschool.com/] team Project to solve a problem with long lines at the more popular rides and exhibits and empty seats at the other entertainment options.
 
 ### Requirements
 * Node v8.9.4 LTS or greater
