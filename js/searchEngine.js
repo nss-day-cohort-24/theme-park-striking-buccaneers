@@ -89,7 +89,7 @@ search();
 //             }
 //         },
 //         (reject) => {
-//             console.log("SOMETHING WENT REALLY WRONG");
+//             console.log("ERROR");
 //         }
 //     );
 // }
