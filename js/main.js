@@ -1,5 +1,5 @@
 "use strict";
-console.log("hello MAIN js");
+console.log("MAIN.js reporting for duty!");
 
 let {dataArea, grabArea} = require("./fire"); //destructure, to allow me to use what I need in this js file
 // console.log("here");

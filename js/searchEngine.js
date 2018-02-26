@@ -1,8 +1,79 @@
 "use strict";
-console.log("search engine js is showing up");
-let fire = require('./fire');
+console.log("searchengine.js is here!");
+
+//// REQUIRES ///
+let {dataArea, grabArea} = require('./fire');
 let map = require('./map');
 let printJS = require('./print');
+
+
+//// VARIABLES ////
+let searchBar = document.getElementById("searchBar");
+let searchBtn = document.getElementById("search-btn");
+let areaList = document.getElementById("areaList");
+let input = searchBar.value;
+let attractionNames = [];
+let printFire = document.getElementById("areaList");
+let searchName;
+let keys = [];
+let ids = [];
+
+
+
+//// EVENT LISTENERS ////
+searchBar.addEventListener("keydown", pressEnter);
+
+//// FUNCTIONS ////
+
+function pressEnter(clickEvent){
+    if(clickEvent.keyCode === 13){
+        searchAttractions(clickEvent);
+    }
+}
+
+// function searchAttractions() {
+//     grabArea(1, 2, 3, 4, 5, 6, 7)
+// .then(function(response){
+//         keys.push(Object.keys(response));
+//         keys.prototype.search = function(input){
+//         if(keys.isArray(this) && input){
+//             for(var i =0; i < this.length; i++ ){
+//                 if(this[i].toLowercase() == input){
+//                     return `found ${input} at ${i}.`;
+//                 }
+//             }console.log(`Sorry. ${this[i]} was not found.`);
+//         }else{console.log("Please enter a search term.");}
+//     };
+// });
+// }
+
+
+function searchAttractions() {
+    grabArea(1)
+.then(function(response){
+    console.log("attraction results coming right up");
+    // console.log("response: ", response);
+    let keys = Object.keys(response);
+    console.log("keys", keys);
+    let attractionResults = "";
+    keys.forEach(function(item){
+        // console.log("item", response[item]);
+        let possibleNames = response[item].name;
+        attractionNames.push(possibleNames);
+        console.log("attractionNames: ", attractionNames);
+        console.log(attractionNames.includes(input));
+        if(attractionNames.includes(input)){
+            // console.log("we want this attractionName ");
+        printFire.innerHTML = `<p>${input} can be found in in ${response[item].area_id}</p>`;
+        }else if(undefined){
+            printFire.innerHTML = `<p>No search results.</p>`;
+        }
+// printFire.innerHTML = attractionResults;
+});
+});
+}
+
+ 
 
 
 // 1. make your call to FB to get all attractions DONE
@@ -18,27 +89,6 @@ let printJS = require('./print');
 // } 
 
 // input = searchBarInput.value.toLowerCase();
-
-let searchBar = document.getElementById("searchBar");
-let searchBtn = document.getElementById("search-btn");
-let searchResults = [];
-let searchString = "";
-
-function search() {
-    console.log("search function is working");
-    let attractionValue = map.displayAttraction.value;
-    console.log("ATTRACTION VALUE: ", attractionValue);
-}
-search();
-
-
-// function messageEnter(){
-//     if (event.which === 13 || event.keyCode == 13) {
-//         messageDisplay();
-//         return false;
-//     }
-// }
-
 
 
 
@@ -98,4 +148,8 @@ search();
 //     printDiv.innerHTML = `${searchHead}`;
 // }
 
+<<<<<<< HEAD
+module.exports={searchAttractions};
+=======
 // module.exports = {search, enter};
+>>>>>>> master
