@@ -17,6 +17,23 @@ let newLoc;
 let locTime;
 let locationTime;
 
+let timeDropdown = `
+<select class="form-control btn-danger" id="timeDropdown">
+        <option>Select time</option>
+        <option value="a" id="s1">9:00am - 10:00am</option>
+        <option value="b" id="s2">10:00am - 11:00am</option>
+        <option value="c" id="s3">11:00am - 12:00pm</option>
+        <option value="d" id="s4">12:00pm - 1:00pm</option>
+        <option value="e" id="s5">1:00pm - 2:00pm</option>
+        <option value="f" id="s6">2:00pm - 3:00pm</option>
+        <option value="g" id="s7">3:00pm - 4:00pm</option>
+        <option value="h" id="s8">4:00pm - 5:00pm</option>
+        <option value="i" id="s9">5:00pm - 6:00pm</option>
+        <option value="j" id="s10">6:00pm - 7:00pm</option>
+        <option value="k" id="s11">7:00pm - 8:00pm</option>
+        <option value="l" id="s12">8:00pm - 9:00pm</option>
+        <option value="m" id="s13">9:00pm - 10:00pm</option>
+                </select>`;
 
 function test1() {
     console.log("good day sir");
@@ -120,10 +137,10 @@ function getTimeDropdown() {
     });
 }
 
-function sortByAttractionTime(collection, keys) {
+function sortByAttractionTime(collection, keys){
     let allItems = [];
     keys.forEach(function(item){
-        collection[item].times.for(function(time){
+        collection[item].times.forEach(function(time){
             if(time.includes(selectedTime))
             allItems.shift(item);
         });
